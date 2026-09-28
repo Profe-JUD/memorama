@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama - Español</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #fda085 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 3em;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            color: white;
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 50px;
+            opacity: 0.95;
+        }
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .game-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+        .game-icon {
+            font-size: 5em;
+            margin-bottom: 15px;
+        }
+        .game-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .game-desc {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.4;
+        }
+        .colors-card .game-title { color: #764ba2; }
+        .preps-card .game-title { color: #fda085; }
+        .clothing-card .game-title { color: #ff6b9d; }
+        .sultan-card .game-title { color: #2d6a4f; }
+        .citas-card .game-title { color: #8a4b6b; }
+        .footer {
+            margin-top: 50px;
+            color: white;
+            font-size: 0.9em;
+            opacity: 0.85;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎓 Memorama</h1>
+    <p class="subtitle">Aprende español jugando</p>
+
+    <div class="games">
+        <a href="color-memory-game.html" class="game-card colors-card">
+            <div class="game-icon">🎨</div>
+            <div class="game-title">Los colores</div>
+            <div class="game-desc">Los colores en español<br>12 pares · tarjetas de colores</div>
+        </a>
+
+        <a href="color-memory-white.html" class="game-card colors-card">
+            <div class="game-icon">🎨</div>
+            <div class="game-title">Los colores (blanco)</div>
+            <div class="game-desc">Los colores en español<br>12 pares · tarjetas blancas</div>
+        </a>
+
+        <a href="preposition-memory.html" class="game-card preps-card">
+            <div class="game-icon">📚</div>
+            <div class="game-title">Las preposiciones</div>
+            <div class="game-desc">Preposiciones de lugar<br>12 pares</div>
+        </a>
+
+        <a href="microrrelato.html" class="game-card sultan-card">
+            <div class="game-icon">🌲</div>
+            <div class="game-title">El microrrelato</div>
+            <div class="game-desc">Escucha y lee la historia —<br>elige el final y el título</div>
+        </a>
+
+        <a href="https://profe-jud.github.io/dos-citas/" class="game-card citas-card">
+            <div class="game-icon">💬</div>
+            <div class="game-title">Dos citas</div>
+            <div class="game-desc">Forma dos citas, interprétalas<br>y di con cuál te identificas</div>
+        </a>
+    </div>
+
+    <p class="footer">💡 Toca una tarjeta para empezar</p>
+</body>
+</html>
